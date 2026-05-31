@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Privacy Policy — Pennora</title>
+<style>
+  :root { --green:#2F7A56; --ink:#1d2421; --muted:#5b6b63; --bg:#f7f5f2; }
+  * { box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.65; color: var(--ink); background: var(--bg);
+    margin: 0; padding: 0;
+  }
+  .wrap { max-width: 760px; margin: 0 auto; padding: 40px 22px 80px; }
+  header { border-bottom: 3px solid var(--green); padding-bottom: 18px; margin-bottom: 28px; }
+  h1 { color: var(--green); margin: 0 0 6px; font-size: 30px; }
+  .sub { color: var(--muted); font-size: 14px; }
+  h2 { color: var(--green); margin-top: 34px; font-size: 20px; }
+  p, li { font-size: 16px; }
+  ul { padding-left: 22px; }
+  li { margin-bottom: 8px; }
+  .pill {
+    display:inline-block; background:#e7f1ec; color:var(--green);
+    border-radius:999px; padding:3px 12px; font-size:13px; font-weight:600; margin-bottom:18px;
+  }
+  .box {
+    background:#fff; border:1px solid #e3e0db; border-radius:14px;
+    padding:18px 20px; margin:18px 0;
+  }
+  strong { color: var(--ink); }
+  a { color: var(--green); }
+  footer { margin-top: 46px; padding-top:18px; border-top:1px solid #e3e0db; color:var(--muted); font-size:13px; }
+  code { background:#eee; padding:1px 6px; border-radius:5px; font-size:14px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="pill">Privacy Policy</div>
+    <h1>Pennora — Privacy Policy</h1>
+    <div class="sub">Last updated: 31 May 2026</div>
+  </header>
+
+  <p>
+    Pennora ("the app", "we", "us") is a personal expense and income diary. This policy
+    explains what information the app handles and how. The short version: <strong>Pennora
+    stores everything on your device and does not collect, transmit, or sell your data.</strong>
+  </p>
+
+  <div class="box">
+    <strong>Summary</strong>
+    <ul>
+      <li>All your entries, notes, categories and settings stay on your device.</li>
+      <li>We have no servers and no account system. We never receive your financial data.</li>
+      <li>Backups are files you control. When your app has a PIN, backups are encrypted with it.</li>
+      <li>No advertising, no analytics SDKs, no third-party tracking.</li>
+    </ul>
+  </div>
+
+  <h2>1. Information the app stores</h2>
+  <p>
+    Pennora stores the data you enter — transaction amounts, titles, notes, dates, categories,
+    payment methods and tags — in a private database on your device. Your app settings
+    (currency, theme, budget, backup preferences) and your optional lock settings are also
+    stored locally. This information is never uploaded to us or to any third party.
+  </p>
+
+  <h2>2. Information we collect</h2>
+  <p>
+    <strong>None.</strong> Pennora has no backend servers, no user accounts, and no analytics
+    or advertising libraries. We do not collect personal information, usage statistics, device
+    identifiers, or location data.
+  </p>
+
+  <h2>3. App lock (PIN &amp; biometrics)</h2>
+  <p>
+    You may optionally protect the app with a PIN and/or biometric unlock (fingerprint or face).
+    Your PIN is stored on the device as a salted cryptographic hash, and a copy used for backup
+    encryption is sealed using the Android Keystore (hardware-backed where available). Biometric
+    verification is performed by your device's operating system; the app never sees or stores your
+    fingerprint or face data.
+  </p>
+
+  <h2>4. Backups and transfers</h2>
+  <p>
+    Pennora can create backup files so you can move your data to another device or keep a copy.
+    These backups are written to your device's public <code>Downloads/Pennora</code> folder and,
+    optionally, shared by you through apps you choose.
+  </p>
+  <ul>
+    <li>
+      <strong>Encryption.</strong> If your app has a PIN set, backups are encrypted using
+      AES-256-GCM with a key derived from your PIN (PBKDF2). A backup copied to another device
+      cannot be read or restored without that PIN.
+    </li>
+    <li>
+      <strong>Your control.</strong> Backup files live in your device storage. If you share or
+      move a backup, it travels only to the destination you choose. We never receive it.
+    </li>
+    <li>
+      <strong>Restore.</strong> Restoring an encrypted backup requires entering its PIN.
+    </li>
+  </ul>
+
+  <h2>5. Permissions the app uses</h2>
+  <ul>
+    <li>
+      <strong>Biometric</strong> — to offer fingerprint/face unlock for the optional app lock.
+    </li>
+    <li>
+      <strong>Microphone (record audio)</strong> — only when you tap the microphone button to
+      dictate a diary note. Speech is processed by your device's own speech recognition; the app
+      stores only the resulting text you keep.
+    </li>
+    <li>
+      <strong>Notifications</strong> — to show backup or reminder notifications, where applicable.
+    </li>
+    <li>
+      <strong>Internet</strong> — used only by Google's ML Kit to download an on-device
+      translation language model the first time you translate a note. Your note text is translated
+      on the device and is not sent to us.
+    </li>
+    <li>
+      <strong>Storage (older Android versions only)</strong> — to save and read backup files in
+      your public Downloads folder. On newer Android versions this works without a storage
+      permission.
+    </li>
+  </ul>
+
+  <h2>6. On-device translation (Google ML Kit)</h2>
+  <p>
+    The optional "Translate" feature uses Google's ML Kit on-device translation. The first time
+    you use a language, its model is downloaded to your device. After that, translation runs
+    offline on your device. Model downloads are subject to
+    <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google's Privacy Policy</a>.
+    Your note content is not transmitted to us.
+  </p>
+
+  <h2>7. Children's privacy</h2>
+  <p>
+    Pennora is a general-purpose finance tool and is not directed at children under 13. We do not
+    knowingly collect any information from children (and in fact collect no personal information
+    from anyone).
+  </p>
+
+  <h2>8. Data deletion</h2>
+  <p>
+    Because all data is stored locally, you can delete it at any time by deleting entries within
+    the app, deleting backup files from your Downloads folder, or uninstalling the app (which
+    removes the app's private database). Backup files you have copied elsewhere must be deleted
+    by you in those locations.
+  </p>
+
+  <h2>9. Changes to this policy</h2>
+  <p>
+    We may update this policy as the app evolves. Material changes will be reflected by updating
+    the "Last updated" date above and, where appropriate, within the app or store listing.
+  </p>
+
+  <h2>10. Contact</h2>
+  <p>
+    For questions about this policy, contact the developer at:
+    <br><strong>[YOUR EMAIL ADDRESS]</strong>
+  </p>
+
+  <footer>
+    Pennora · Application ID: com.diary.expense · This policy applies to the Pennora Android
+    application. Pennora stores your financial data only on your device.
+  </footer>
+</div>
+</body>
+</html>
